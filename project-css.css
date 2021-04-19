@@ -1,0 +1,95 @@
+/*-------------backkground-------------*/ 
+body{ 
+    background:hsl(210, 46%, 95%);
+}
+
+/*-------------grid container----------*/
+
+.grid-container{ 
+    display:grid;
+    
+    width:800px;
+    height:300px;
+    grid-template-columns:4fr 6fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    
+    border-radius:8px;
+    overflow:hidden;/*This is so the corner edges get hidden*/
+    font-family:manrope, sans-serif;
+    font-size:13;
+    margin:8em auto;
+      
+}
+
+.left{ 
+    grid-column:1/2; 
+    grid-row:1/4;
+    background-image:url("drawers.jpg");
+    background-size:cover;
+}
+
+.right{ 
+    background:white;
+    padding:10px 15px;
+ 
+}
+
+.drawers{ 
+    object-fit:contain;
+}
+
+.header{ 
+    grid-row:1/2; 
+    grid-column:2/3;
+    
+}
+
+.blurb{ 
+    grid-row:2/3; 
+    grid-column:2/3;
+}
+
+footer{ 
+    grid-row:3/4; 
+    grid-column:2/3;
+   
+}
+/*-------------flex container----------*/
+
+
+footer{ 
+    
+    display:flex;
+    align-items:center;
+    
+}
+footer>section{ 
+    padding:5px; /*this selects all the sections in the footer*/
+}
+
+.name-date{ 
+  flex-basis:18em;/*makes the width bigger to push the shre picture over*/
+    
+}
+
+.date{ 
+   padding:0;
+   border:0;
+   margin:0; 
+   color:hsl(212, 23%, 69%);
+} 
+
+h5{ 
+    margin-bottom:-2px;
+}
+
+.share{ 
+    background:hsl(210, 46%, 95%);
+    padding:10px;
+    border-radius:50%;
+}
+
+.profile{ 
+   border-radius:50%;
+   
+}
